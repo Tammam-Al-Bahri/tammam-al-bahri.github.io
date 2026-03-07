@@ -63,7 +63,7 @@ export default function Portfolio() {
                             <div className="absolute top-1 left-1/2 -translate-x-1/2 w-24 h-5 bg-neutral-900 rounded-full z-10 opacity-80"></div>
 
                             <iframe
-                                src={`https://tammam-al-bahri.github.io/portfolio/?level=${nextLevel}&rnd=${Math.random()}`}
+                                src={`https://tammam-al-bahri.github.io/?level=${nextLevel}`}
                                 title="Portfolio Inception"
                                 className="w-full h-full rounded-[2.5rem] overflow-hidden"
                             ></iframe>
@@ -79,7 +79,7 @@ export default function Portfolio() {
                         >
                             <Button variant={"outline"}>
                                 <a
-                                    href="https://github.com/Tammam-Al-Bahri/portfolio"
+                                    href="https://github.com/Tammam-Al-Bahri/tammam-al-bahri.github.io"
                                     target="_blank"
                                     className="text-xl flex items-center"
                                 >

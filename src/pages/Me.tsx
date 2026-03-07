@@ -110,7 +110,7 @@ export default function Me() {
                                 className="font-mono scale-150 text-zinc-500 opacity-50"
                             />
                             <img
-                                src={"/portfolio/images/me.jpg"}
+                                src={"/images/me.jpg"}
                                 className="absolute w-50 h-50 rounded-full"
                             />
                         </div>
