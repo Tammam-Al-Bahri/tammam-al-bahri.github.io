@@ -1,6 +1,6 @@
 import { AppSidebar } from "./components/app-sidebar";
 import { SidebarProvider, SidebarTrigger } from "./components/ui/sidebar";
-import { HashRouter, Outlet, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
 import pages from "./pages";
 import Footer from "./components/Footer";
 
@@ -31,6 +31,7 @@ function App() {
                     {pages.map(({ path, component: Component }) => (
                         <Route key={path} path={path} element={<Component />} />
                     ))}
+                    <Route path="*" element={<Navigate to="/" replace />} />
                 </Route>
             </Routes>
         </HashRouter>

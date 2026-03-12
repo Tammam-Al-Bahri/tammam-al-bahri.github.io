@@ -1,12 +1,14 @@
-import Me from "./Me";
-import Projects from "./Projects";
-import Portfolio from "./projects/Portfolio";
-import Skills from "./AboutMe";
-import ProjectManager from "./projects/ProjectManager";
-import UniversityProjects from "./projects/UniversityProjects";
-import RepurposedLaptop from "./projects/RepurposedLaptop";
-import NFTScanner from "./projects/NFTScanner";
+import { lazy } from "react";
 import { useLocation } from "react-router-dom";
+
+const Me = lazy(() => import("./Me"));
+const Projects = lazy(() => import("./Projects"));
+const Portfolio = lazy(() => import("./projects/Portfolio"));
+const Skills = lazy(() => import("./AboutMe"));
+const ProjectManager = lazy(() => import("./projects/ProjectManager"));
+const UniversityProjects = lazy(() => import("./projects/UniversityProjects"));
+const RepurposedLaptop = lazy(() => import("./projects/RepurposedLaptop"));
+const NFTScanner = lazy(() => import("./projects/NFTScanner"));
 
 const pages = [
     {
