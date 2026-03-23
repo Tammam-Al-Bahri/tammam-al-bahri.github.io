@@ -1,12 +1,12 @@
 import {
     Bot,
-    Brain,
+    // Brain,
     BriefcaseBusiness,
+    ChevronsLeftRight,
     Folders,
     Paperclip,
     PersonStanding,
     SearchCode,
-    University,
     type LucideProps,
 } from "lucide-react";
 import {
@@ -43,19 +43,19 @@ const aboutMeItems: MenuItem[] = [
         path: "/",
         icon: PersonStanding,
     },
-    {
-        title: "About Me",
-        path: "/about-me",
-        icon: Brain,
-    },
-    {
-        title: "Projects",
-        path: "/projects",
-        icon: Folders,
-    },
+    // {
+    //     title: "About Me",
+    //     path: "/about-me",
+    //     icon: Brain,
+    // },
 ];
 
 const projectItems: MenuItem[] = [
+    {
+        title: "Overview",
+        path: "/projects",
+        icon: Folders,
+    },
     {
         title: "Portfolio",
         path: "/projects/portfolio",
@@ -72,9 +72,9 @@ const projectItems: MenuItem[] = [
         icon: SearchCode,
     },
     {
-        path: "/projects/university-projects",
-        title: "University Projects",
-        icon: University,
+        path: "/projects/extra",
+        title: "Extra",
+        icon: ChevronsLeftRight,
     },
     {
         path: "/projects/repurposed-laptop",
@@ -97,7 +97,8 @@ export function AppSidebar() {
                 >
                     <a
                         onClick={() => (
-                            navigate(aboutMeItems[0].path), sidebar.setOpenMobile(false)
+                            navigate(aboutMeItems[0].path),
+                            sidebar.setOpenMobile(false)
                         )}
                     >
                         Tammam Al Bahri
@@ -114,7 +115,8 @@ export function AppSidebar() {
                                     <SidebarMenuButton
                                         asChild
                                         onClick={() => (
-                                            navigate(item.path), sidebar.setOpenMobile(false)
+                                            navigate(item.path),
+                                            sidebar.setOpenMobile(false)
                                         )}
                                     >
                                         <button className="select-none">
@@ -136,7 +138,8 @@ export function AppSidebar() {
                                     <SidebarMenuButton
                                         asChild
                                         onClick={() => (
-                                            navigate(item.path), sidebar.setOpenMobile(false)
+                                            navigate(item.path),
+                                            sidebar.setOpenMobile(false)
                                         )}
                                     >
                                         <button className="select-none">

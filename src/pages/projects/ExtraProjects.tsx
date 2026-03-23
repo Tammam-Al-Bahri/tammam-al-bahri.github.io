@@ -18,7 +18,7 @@ import uniConsole1 from "/images/projects/university-projects/console-app-main.j
 import uniConsole2 from "/images/projects/university-projects/console-app-tasks.jpg";
 import NavButtons from "@/components/NavButtons";
 
-export default function UniversityProjects() {
+export default function ExtraProjects() {
     const tskImages = [
         { id: 3, img: uniTsk3 },
         { id: 1, img: uniTsk1 },

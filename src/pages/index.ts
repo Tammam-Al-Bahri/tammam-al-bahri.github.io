@@ -4,9 +4,9 @@ import { useLocation } from "react-router-dom";
 const Me = lazy(() => import("./Me"));
 const Projects = lazy(() => import("./Projects"));
 const Portfolio = lazy(() => import("./projects/Portfolio"));
-const Skills = lazy(() => import("./AboutMe"));
+// const Skills = lazy(() => import("./AboutMe"));
 const ProjectManager = lazy(() => import("./projects/ProjectManager"));
-const UniversityProjects = lazy(() => import("./projects/UniversityProjects"));
+const ExtraProjects = lazy(() => import("./projects/ExtraProjects"));
 const RepurposedLaptop = lazy(() => import("./projects/RepurposedLaptop"));
 const NFTScanner = lazy(() => import("./projects/NFTScanner"));
 
@@ -16,14 +16,14 @@ const pages = [
         title: "Me",
         component: Me,
     },
-    {
-        path: "/about-me",
-        title: "About Me",
-        component: Skills,
-    },
+    // {
+    //     path: "/about-me",
+    //     title: "About Me",
+    //     component: Skills,
+    // },
     {
         path: "/projects",
-        title: "Projects",
+        title: "Overview",
         component: Projects,
     },
     {
@@ -42,9 +42,9 @@ const pages = [
         component: NFTScanner,
     },
     {
-        path: "/projects/university-projects",
-        title: "University Projects",
-        component: UniversityProjects,
+        path: "/projects/extra",
+        title: "Extra",
+        component: ExtraProjects,
     },
     {
         path: "/projects/repurposed-laptop",
