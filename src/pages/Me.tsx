@@ -160,7 +160,7 @@ export default function Me() {
                                     username="Tammam-Al-Bahri"
                                     colorScheme={theme === "dark" ? "dark" : "light"}
                                     fontSize={16}
-                                    className="border rounded p-2"
+                                    className="border border-dashed rounded p-2"
                                 />
                             </CardContent>
                         </Card>

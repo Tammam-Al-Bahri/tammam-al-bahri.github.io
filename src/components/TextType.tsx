@@ -132,7 +132,7 @@ const TextType = ({
         getRandomSpeed,
     ]);
 
-    // pause → falling
+    // pause -> falling
     useEffect(() => {
         if (phase !== "pause") return;
 
@@ -191,7 +191,7 @@ const TextType = ({
             ...props,
         },
 
-        // TYPED TEXT (word-wrapped spans)
+        // typed text
         <span className="inline">
             {displayedText.split(" ").map((word, i) => (
                 <span
@@ -206,7 +206,7 @@ const TextType = ({
             ))}
         </span>,
 
-        // FALLING WORDS
+        // falling words
         fallingWords.map((word, i) => (
             <span
                 key={`fall-${i}`}
@@ -231,7 +231,7 @@ const TextType = ({
             </span>
         )),
 
-        // CURSOR
+        // cursor
         showCursor && (
             <span
                 ref={cursorRef}
