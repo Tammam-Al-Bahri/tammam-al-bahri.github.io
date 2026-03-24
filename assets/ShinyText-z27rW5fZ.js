@@ -1,1 +1,0 @@
-import{j as a}from"./index-DzuuYh1V.js";const r=({text:s,disabled:t=!1,speed:e=5,className:i=""})=>{const n=`${e}s`;return a.jsx("div",{className:`shiny-text ${t?"disabled":""} ${i}`,style:{animationDuration:n},children:s})};export{r as S};
