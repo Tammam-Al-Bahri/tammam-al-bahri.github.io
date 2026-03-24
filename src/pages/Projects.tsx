@@ -62,7 +62,7 @@ export default function Projects() {
     const variants = ["default", "blue", "yellow", "pink"] as const;
     const projects = [
         {
-            page: pages[2],
+            page: pages[3],
             variant: 1,
             icon: Paperclip,
             images: [
@@ -80,7 +80,7 @@ export default function Projects() {
             ],
         },
         {
-            page: pages[3],
+            page: pages[4],
             variant: 0,
             icon: BriefcaseBusiness,
             images: [
@@ -103,7 +103,7 @@ export default function Projects() {
             ],
         },
         {
-            page: pages[4],
+            page: pages[5],
             variant: 3,
             icon: SearchCode,
             images: [
@@ -115,7 +115,7 @@ export default function Projects() {
             logos: [SiJavascript],
         },
         {
-            page: pages[5],
+            page: pages[6],
             variant: 2,
             icon: University,
             images: [
@@ -149,7 +149,7 @@ export default function Projects() {
             ],
         },
         {
-            page: pages[6],
+            page: pages[7],
             variant: 0,
             icon: Bot,
             images: [

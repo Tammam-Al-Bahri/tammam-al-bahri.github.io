@@ -7,6 +7,7 @@ import {
     Paperclip,
     PersonStanding,
     SearchCode,
+    Users,
     type LucideProps,
 } from "lucide-react";
 import {
@@ -34,6 +35,7 @@ type MenuItem = {
         icon: React.ForwardRefExoticComponent<
             Omit<LucideProps, "ref"> & React.RefAttributes<SVGSVGElement>
         >;
+        extraText?: string;
     };
 }[Pages["title"]];
 
@@ -51,6 +53,12 @@ const aboutMeItems: MenuItem[] = [
 ];
 
 const projectItems: MenuItem[] = [
+    {
+        title: "Autodesk Autocoderz",
+        path: "/projects/autocoderz",
+        icon: Users,
+        extraText: "NEW!",
+    },
     {
         title: "Overview",
         path: "/projects",
@@ -145,6 +153,11 @@ export function AppSidebar() {
                                         <button className="select-none">
                                             <item.icon />
                                             <span>{item.title}</span>
+                                            {item.extraText && (
+                                                <span className="font-mono italic text-accent-foreground">
+                                                    {item.extraText}
+                                                </span>
+                                            )}
                                         </button>
                                     </SidebarMenuButton>
                                 </SidebarMenuItem>

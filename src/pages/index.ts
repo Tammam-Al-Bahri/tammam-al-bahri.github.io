@@ -9,6 +9,7 @@ const ProjectManager = lazy(() => import("./projects/ProjectManager"));
 const ExtraProjects = lazy(() => import("./projects/ExtraProjects"));
 const RepurposedLaptop = lazy(() => import("./projects/RepurposedLaptop"));
 const NFTScanner = lazy(() => import("./projects/NFTScanner"));
+const AutodeskAutocoderz = lazy(() => import("./projects/AutodeskAutocoderz"));
 
 const pages = [
     {
@@ -21,6 +22,11 @@ const pages = [
     //     title: "About Me",
     //     component: Skills,
     // },
+    {
+        path: "/projects/autocoderz",
+        title: "Autodesk Autocoderz",
+        component: AutodeskAutocoderz,
+    },
     {
         path: "/projects",
         title: "Overview",
