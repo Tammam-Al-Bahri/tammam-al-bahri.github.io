@@ -19,7 +19,7 @@ export default function Me() {
         "does typing tests for fun",
         "believes in open source",
         "doesn't reinvent buttons",
-        "avoids merge conflicts",
+        "resolves merge conflicts",
         "writes scalable code",
         "appreciates pnpm",
         "runs linux on old hardware",
@@ -146,10 +146,10 @@ export default function Me() {
                                         </span>
                                         <TextType
                                             text={text}
-                                            pauseDuration={2000}
+                                            pauseDuration={1500}
                                             showCursor={true}
                                             cursorCharacter="|"
-                                            className="text-accent-foreground"
+                                            className="dark:text-accent-foreground"
                                             variableSpeed={{ min: 7, max: 120 }}
                                             cursorBlinkDuration={0.7}
                                             cursorClassName="text-muted-foreground"
