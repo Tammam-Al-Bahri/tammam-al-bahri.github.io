@@ -132,7 +132,7 @@ const TextType = ({
         getRandomSpeed,
     ]);
 
-    // pause -> falling
+    // pause to falling
     useEffect(() => {
         if (phase !== "pause") return;
 

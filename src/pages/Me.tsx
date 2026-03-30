@@ -11,19 +11,19 @@ import { useState, useEffect } from "react";
 import ClickSpark from "@/components/ClickSpark";
 import NavButtons from "@/components/NavButtons";
 import { GitHubCalendar } from "react-github-calendar";
+import ShinyText from "@/components/ShinyText";
 
 export default function Me() {
     const text = [
         "loves clean code",
+        "believes in open source",
+        "resolves merge conflicts",
+        "runs linux on old hardware",
+        "appreciates pnpm",
+        "thrives in vscode",
+        "writes scalable code",
         "prefers dark mode",
         "does typing tests for fun",
-        "believes in open source",
-        "doesn't reinvent buttons",
-        "resolves merge conflicts",
-        "writes scalable code",
-        "appreciates pnpm",
-        "runs linux on old hardware",
-        "thrives in vscode",
         "manages dependencies",
         "lives in a docker container",
     ];
@@ -100,6 +100,7 @@ export default function Me() {
                         saturation={0.8}
                         borderWidth={0.3}
                         mixBlendMode="difference"
+                        className="hidden sm:block"
                     >
                         <div className="relative flex items-center justify-center text-muted-foreground">
                             <CircularText
@@ -115,28 +116,30 @@ export default function Me() {
                         </div>
                     </GlassSurface>
                     <div className="max-w-full">
-                        <Card className="shadow-2xl">
-                            <CardHeader>
-                                <div>
-                                    <GradientText
-                                        colors={
-                                            theme == "light"
-                                                ? [
-                                                      "#06a600",
-                                                      "#03999c",
-                                                      "#00782c",
-                                                      "#03999c",
-                                                      "#06a600",
-                                                  ]
-                                                : ["#0dff00", "#40ffaa", "#40ffb6", "#0dff00"]
-                                        }
-                                        animationSpeed={10}
-                                        showBorder={false}
-                                        className="text-5xl"
-                                    >
-                                        Tammam Al Bahri
-                                    </GradientText>
-                                </div>
+                        <Card className="shadow-2xl m-2">
+                            <CardHeader className="text-center">
+                                <GradientText
+                                    colors={
+                                        theme == "light"
+                                            ? [
+                                                  "#06a600",
+                                                  "#03999c",
+                                                  "#00782c",
+                                                  "#03999c",
+                                                  "#06a600",
+                                              ]
+                                            : ["#0dff00", "#40ffaa", "#40ffb6", "#0dff00"]
+                                    }
+                                    animationSpeed={10}
+                                    showBorder={false}
+                                    className="text-5xl"
+                                >
+                                    Tammam <span className="whitespace-nowrap">Al Bahri</span>
+                                </GradientText>
+                                <ShinyText
+                                    text="Software Engineering Student at Sheffield Hallam University"
+                                    className="invert dark:invert-0"
+                                />
                             </CardHeader>
                             <CardContent className="flex flex-col gap-4 justify-center">
                                 <div className="font-mono">
@@ -158,7 +161,14 @@ export default function Me() {
                                 </div>
                                 <GitHubCalendar
                                     username="Tammam-Al-Bahri"
-                                    colorScheme={theme === "dark" ? "dark" : "light"}
+                                    colorScheme={
+                                        theme == "system"
+                                            ? window.matchMedia("(prefers-color-scheme: dark)")
+                                                  .matches
+                                                ? "dark"
+                                                : "light"
+                                            : theme
+                                    }
                                     fontSize={16}
                                     className="border border-dashed rounded p-2"
                                 />
