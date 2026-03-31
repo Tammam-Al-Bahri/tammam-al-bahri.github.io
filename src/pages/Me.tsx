@@ -174,7 +174,7 @@ export default function Me() {
                                 />
                             </CardContent>
                         </Card>
-                        <div className="flex justify-between mt-4 pb-8 pointer-events-auto">
+                        <div className="flex justify-between m-2 pointer-events-auto">
                             <ThemeToggle />
                             <NavButtons />
                         </div>
