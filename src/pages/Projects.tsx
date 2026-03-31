@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Bot, BriefcaseBusiness, Paperclip, SearchCode, University } from "lucide-react";
+import { Bot, BriefcaseBusiness, Paperclip, SearchCode, University, Users } from "lucide-react";
 import pages from ".";
 import { useNavigate } from "react-router-dom";
 import ASCIIText from "@/components/ASCIIText";
@@ -32,6 +32,7 @@ import uniCrud1 from "/images/projects/university-projects/shuber-1.jpg";
 import uniCrud2 from "/images/projects/university-projects/shuber-2.jpg";
 import uniConsole1 from "/images/projects/university-projects/console-app-main.jpg";
 import uniConsole2 from "/images/projects/university-projects/console-app-tasks.jpg";
+import autocoderz1 from "/images/projects/autodesk-autocoderz/email-code.jpg";
 import {
     SiDotnet,
     SiJavascript,
@@ -53,6 +54,9 @@ import {
     SiCss3,
     SiGithubpages,
     SiLinux,
+    SiRailway,
+    SiCloudflare,
+    SiResend,
 } from "react-icons/si";
 import FallingIcons from "@/components/FallingIcons";
 import NavButtons from "@/components/NavButtons";
@@ -61,6 +65,27 @@ import { useIsMobile } from "@/hooks/use-mobile";
 export default function Projects() {
     const variants = ["default", "blue", "yellow", "pink"] as const;
     const projects = [
+        {
+            page: pages[2],
+            variant: 1,
+            icon: Users,
+            images: [{ id: 1, img: autocoderz1 }],
+            logos: [
+                SiTypescript,
+                SiVite,
+                SiReact,
+                SiReactrouter,
+                SiShadcnui,
+                SiTailwindcss,
+                SiRailway,
+                SiExpress,
+                SiElectron,
+                SiCloudflare,
+                SiPrisma,
+                SiMysql,
+                SiResend,
+            ],
+        },
         {
             page: pages[3],
             variant: 1,
@@ -115,6 +140,16 @@ export default function Projects() {
             logos: [SiJavascript],
         },
         {
+            page: pages[7],
+            variant: 0,
+            icon: Bot,
+            images: [
+                { id: 2, img: laptop2 },
+                { id: 1, img: laptop1 },
+            ],
+            logos: [SiLinux, SiDocker],
+        },
+        {
             page: pages[6],
             variant: 2,
             icon: University,
@@ -147,16 +182,6 @@ export default function Projects() {
                 SiMysql,
                 SiClerk,
             ],
-        },
-        {
-            page: pages[7],
-            variant: 0,
-            icon: Bot,
-            images: [
-                { id: 2, img: laptop2 },
-                { id: 1, img: laptop1 },
-            ],
-            logos: [SiLinux, SiDocker],
         },
     ];
 

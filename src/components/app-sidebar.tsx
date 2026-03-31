@@ -54,15 +54,15 @@ const aboutMeItems: MenuItem[] = [
 
 const projectItems: MenuItem[] = [
     {
+        title: "Overview",
+        path: "/projects",
+        icon: Folders,
+    },
+    {
         title: "Autodesk Autocoderz",
         path: "/projects/autocoderz",
         icon: Users,
         extraText: "NEW!",
-    },
-    {
-        title: "Overview",
-        path: "/projects",
-        icon: Folders,
     },
     {
         title: "Portfolio",

@@ -23,14 +23,14 @@ const pages = [
     //     component: Skills,
     // },
     {
-        path: "/projects/autocoderz",
-        title: "Autodesk Autocoderz",
-        component: AutodeskAutocoderz,
-    },
-    {
         path: "/projects",
         title: "Overview",
         component: Projects,
+    },
+    {
+        path: "/projects/autocoderz",
+        title: "Autodesk Autocoderz",
+        component: AutodeskAutocoderz,
     },
     {
         path: "/projects/portfolio",

@@ -63,7 +63,7 @@ export default function AutodeskAutocoderz() {
                             ></iframe>
                         </div>
                     </div>
-                    <div className="flex justify-center mt-2 px-6 pt-4">
+                    {/* <div className="flex justify-center mt-2 px-6 pt-4">
                         <ElectricBorder
                             color="#4e6b5a"
                             speed={2}
@@ -71,7 +71,7 @@ export default function AutodeskAutocoderz() {
                             thickness={2}
                             className="rounded-xl p-1 group inline-block"
                         >
-                            <Button variant={"outline"} disabled={true}>
+                            <Button variant={"outline"}>
                                 <a
                                     href="https://github.com/Tammam-Al-Bahri/autodesk-autocoderz"
                                     target="_blank"
@@ -85,11 +85,10 @@ export default function AutodeskAutocoderz() {
                                     >
                                         code
                                     </GradientText>
-                                    <Lock className="transition-transform group-hover:scale-105 group-hover:text-destructive" />
                                 </a>
                             </Button>
                         </ElectricBorder>
-                    </div>
+                    </div> */}
                     <Accordion type="multiple">
                         <AccordionItem value="item-1" className="px-8 border-dashed">
                             <AccordionTrigger>
@@ -111,14 +110,38 @@ export default function AutodeskAutocoderz() {
                                 </p>
                                 <p className="pt-4">
                                     Led a team of 5 through two sprints to develop a full stack
-                                    production ready app.
+                                    production ready prototype for a building management app.
                                 </p>
                                 <p className="pt-4">
-                                    Available as a cross platform desktop app and website. Deployed
-                                    to production.
+                                    Cross platform desktop app and website, both using the same API.
+                                    The desktop app connects to the API, and the API also serves the
+                                    web pages.
                                 </p>
+                                <p className="pt-4">
+                                    Users can create companies and buildings, upload and view 3D
+                                    models, invite users to a building as staff with specific roles,
+                                    reset their account password with email verification. Plenty of
+                                    room to add more features.
+                                </p>
+                                <p className="pt-4">Used Autodesk APIs including Viewer</p>
                                 <p className="pt-4">Scalable and developer friendly codebase.</p>
-                                <p className="pt-4">Repository will be made public ASAP.</p>
+                                <p className="pt-4">
+                                    It was previously hosted with{" "}
+                                    <a
+                                        href="https://railway.com/"
+                                        target="_blank"
+                                        className="text-muted-foreground font-semibold hover:underline"
+                                    >
+                                        Railway
+                                    </a>
+                                    .
+                                </p>
+                                <p className="pt-4">
+                                    I'm currently hosting this on my repurposed laptop.
+                                </p>
+                                <p className="pt-8 italic text-center">
+                                    Repository will be made public ASAP.
+                                </p>
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
