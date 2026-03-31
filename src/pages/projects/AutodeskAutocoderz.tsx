@@ -1,14 +1,14 @@
 import ASCIIText from "@/components/ASCIIText";
-import ElectricBorder from "@/components/ElectricBorder";
-import GradientText from "@/components/GradientText";
+// import ElectricBorder from "@/components/ElectricBorder";
+// import GradientText from "@/components/GradientText";
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, FileText, Lock } from "lucide-react";
+// import { Button } from "@/components/ui/button";
+import { ExternalLink, FileText /* Lock */ } from "lucide-react";
 import { useState, useEffect } from "react";
 import NavButtons from "@/components/NavButtons";
 import ShinyText from "@/components/ShinyText";
