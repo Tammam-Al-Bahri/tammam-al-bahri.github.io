@@ -1,13 +1,13 @@
 import ASCIIText from "@/components/ASCIIText";
-// import ElectricBorder from "@/components/ElectricBorder";
-// import GradientText from "@/components/GradientText";
+import ElectricBorder from "@/components/ElectricBorder";
+import GradientText from "@/components/GradientText";
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { ExternalLink, FileText /* Lock */ } from "lucide-react";
 import { useState, useEffect } from "react";
 import NavButtons from "@/components/NavButtons";
@@ -63,7 +63,7 @@ export default function AutodeskAutocoderz() {
                             ></iframe>
                         </div>
                     </div>
-                    {/* <div className="flex justify-center mt-2 px-6 pt-4">
+                    <div className="flex justify-center mt-2 px-6 pt-4">
                         <ElectricBorder
                             color="#4e6b5a"
                             speed={2}
@@ -88,7 +88,7 @@ export default function AutodeskAutocoderz() {
                                 </a>
                             </Button>
                         </ElectricBorder>
-                    </div> */}
+                    </div>
                     <Accordion type="multiple">
                         <AccordionItem value="item-1" className="px-8 border-dashed">
                             <AccordionTrigger>
@@ -137,10 +137,7 @@ export default function AutodeskAutocoderz() {
                                     .
                                 </p>
                                 <p className="pt-4">
-                                    I'm currently hosting this on my repurposed laptop.
-                                </p>
-                                <p className="pt-8 italic text-center">
-                                    Repository will be made public ASAP.
+                                    I will soon host this locally - server being built.
                                 </p>
                             </AccordionContent>
                         </AccordionItem>
