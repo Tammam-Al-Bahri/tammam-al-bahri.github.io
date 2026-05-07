@@ -63,7 +63,7 @@ export default function Portfolio() {
                             <div className="absolute top-1 left-1/2 -translate-x-1/2 w-24 h-5 bg-neutral-900 rounded-full z-10 opacity-80"></div>
 
                             <iframe
-                                src={`https://tammam-al-bahri.github.io/?level=${nextLevel}`}
+                                src={`/?level=${nextLevel}`}
                                 title="Portfolio Inception"
                                 className="w-full h-full rounded-[2.5rem] overflow-hidden"
                             ></iframe>
