@@ -1,6 +1,4 @@
 import {
-    Bot,
-    // Brain,
     BriefcaseBusiness,
     ChevronsLeftRight,
     Folders,
@@ -45,49 +43,47 @@ const aboutMeItems: MenuItem[] = [
         path: "/",
         icon: PersonStanding,
     },
-    // {
-    //     title: "About Me",
-    //     path: "/about-me",
-    //     icon: Brain,
-    // },
-];
-
-const projectItems: MenuItem[] = [
     {
         title: "Overview",
-        path: "/projects",
+        path: "/overview",
         icon: Folders,
     },
+];
+
+const softwareItems: MenuItem[] = [
     {
-        title: "Autodesk Autocoderz",
-        path: "/projects/autocoderz",
+        title: "Autocoderz",
+        path: "/software/autocoderz",
         icon: Users,
-        extraText: "NEW!",
+        extraText: "Self Hosted!",
     },
     {
         title: "Portfolio",
-        path: "/projects/portfolio",
+        path: "/software/portfolio",
         icon: Paperclip,
     },
     {
         title: "Project Manager",
-        path: "/projects/project-manager",
+        path: "/software/project-manager",
         icon: BriefcaseBusiness,
     },
     {
-        path: "/projects/nft-scanner",
+        path: "/software/nft-scanner",
         title: "NFT Scanner",
         icon: SearchCode,
     },
     {
-        path: "/projects/extra",
+        path: "/software/extra",
         title: "Extra",
         icon: ChevronsLeftRight,
     },
+];
+
+const homelabItems: MenuItem[] = [
     {
-        path: "/projects/repurposed-laptop",
-        title: "Repurposed Laptop",
-        icon: Bot,
+        title: "Me",
+        path: "/",
+        icon: PersonStanding,
     },
 ];
 
@@ -138,10 +134,38 @@ export function AppSidebar() {
                     </SidebarGroupContent>
                 </SidebarGroup>
                 <SidebarGroup>
-                    <SidebarGroupLabel>Projects</SidebarGroupLabel>
+                    <SidebarGroupLabel>Software</SidebarGroupLabel>
                     <SidebarGroupContent>
                         <SidebarMenu>
-                            {projectItems.map((item) => (
+                            {softwareItems.map((item) => (
+                                <SidebarMenuItem key={item.title}>
+                                    <SidebarMenuButton
+                                        asChild
+                                        onClick={() => (
+                                            navigate(item.path),
+                                            sidebar.setOpenMobile(false)
+                                        )}
+                                    >
+                                        <button className="select-none">
+                                            <item.icon />
+                                            <span>{item.title}</span>
+                                            {item.extraText && (
+                                                <span className="font-mono italic text-accent-foreground">
+                                                    {item.extraText}
+                                                </span>
+                                            )}
+                                        </button>
+                                    </SidebarMenuButton>
+                                </SidebarMenuItem>
+                            ))}
+                        </SidebarMenu>
+                    </SidebarGroupContent>
+                </SidebarGroup>
+                <SidebarGroup>
+                    <SidebarGroupLabel>Homelab</SidebarGroupLabel>
+                    <SidebarGroupContent>
+                        <SidebarMenu>
+                            {homelabItems.map((item) => (
                                 <SidebarMenuItem key={item.title}>
                                     <SidebarMenuButton
                                         asChild

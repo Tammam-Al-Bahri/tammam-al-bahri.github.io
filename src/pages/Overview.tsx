@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Bot, BriefcaseBusiness, Paperclip, SearchCode, University, Users } from "lucide-react";
+import { BriefcaseBusiness, Paperclip, SearchCode, University, Users } from "lucide-react";
 import pages from ".";
 import { useNavigate } from "react-router-dom";
 import ASCIIText from "@/components/ASCIIText";
@@ -15,8 +15,6 @@ import portfolio2 from "/images/projects/portfolio/portfolio-recursion.jpg";
 import granada1 from "/images/projects/granada/app-and-docker.jpg";
 import granada2 from "/images/projects/granada/app-login.jpg";
 import granada3 from "/images/projects/granada/app-api-url.jpg";
-import laptop1 from "/images/projects/repurposed-laptop/pcb.jpg";
-import laptop2 from "/images/projects/repurposed-laptop/login-screen.jpg";
 import uniTsk1 from "/images/projects/university-projects/tsk-collaborator-editing-subtask.jpg";
 import uniTsk2 from "/images/projects/university-projects/tsk-home.jpg";
 import uniTsk3 from "/images/projects/university-projects/tsk-managing-invites.jpg";
@@ -53,7 +51,6 @@ import {
     SiClerk,
     SiCss3,
     SiGithubpages,
-    SiLinux,
     SiRailway,
     SiCloudflare,
     SiResend,
@@ -62,7 +59,7 @@ import FallingIcons from "@/components/FallingIcons";
 import NavButtons from "@/components/NavButtons";
 import { useIsMobile } from "@/hooks/use-mobile";
 
-export default function Projects() {
+export default function Overview() {
     const variants = ["default", "blue", "yellow", "pink"] as const;
     const projects = [
         {
@@ -138,16 +135,6 @@ export default function Projects() {
                 { id: 1, img: nftScanner1 },
             ],
             logos: [SiJavascript],
-        },
-        {
-            page: pages[7],
-            variant: 0,
-            icon: Bot,
-            images: [
-                { id: 2, img: laptop2 },
-                { id: 1, img: laptop1 },
-            ],
-            logos: [SiLinux, SiDocker],
         },
         {
             page: pages[6],
@@ -271,7 +258,7 @@ export default function Projects() {
                             </PixelCard>
                         );
                     })}
-                    <div className="flex-grow basis-[300px] max-w-[300px]" />
+                    <div className="grow basis-[300px] max-w-[300px]" />
                 </div>
                 <div className="flex justify-between w-full max-w-5xl mx-auto mt-4 px-6 pt-4 pb-8">
                     <NavButtons />

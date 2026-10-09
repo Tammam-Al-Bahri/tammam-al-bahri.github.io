@@ -2,14 +2,12 @@ import { lazy } from "react";
 import { useLocation } from "react-router-dom";
 
 const Me = lazy(() => import("./Me"));
-const Projects = lazy(() => import("./Projects"));
-const Portfolio = lazy(() => import("./projects/Portfolio"));
-// const Skills = lazy(() => import("./AboutMe"));
-const ProjectManager = lazy(() => import("./projects/ProjectManager"));
-const ExtraProjects = lazy(() => import("./projects/ExtraProjects"));
-const RepurposedLaptop = lazy(() => import("./projects/RepurposedLaptop"));
-const NFTScanner = lazy(() => import("./projects/NFTScanner"));
-const AutodeskAutocoderz = lazy(() => import("./projects/AutodeskAutocoderz"));
+const Overview = lazy(() => import("./Overview"));
+const Portfolio = lazy(() => import("./software/Portfolio"));
+const ProjectManager = lazy(() => import("./software/ProjectManager"));
+const ExtraProjects = lazy(() => import("./software/ExtraProjects"));
+const NFTScanner = lazy(() => import("./software/NFTScanner"));
+const AutodeskAutocoderz = lazy(() => import("./software/AutodeskAutocoderz"));
 
 const pages = [
     {
@@ -17,45 +15,35 @@ const pages = [
         title: "Me",
         component: Me,
     },
-    // {
-    //     path: "/about-me",
-    //     title: "About Me",
-    //     component: Skills,
-    // },
     {
-        path: "/projects",
+        path: "/overview",
         title: "Overview",
-        component: Projects,
+        component: Overview,
     },
     {
-        path: "/projects/autocoderz",
-        title: "Autodesk Autocoderz",
+        path: "/software/autocoderz",
+        title: "Autocoderz",
         component: AutodeskAutocoderz,
     },
     {
-        path: "/projects/portfolio",
+        path: "/software/portfolio",
         title: "Portfolio",
         component: Portfolio,
     },
     {
-        path: "/projects/project-manager",
+        path: "/software/project-manager",
         title: "Project Manager",
         component: ProjectManager,
     },
     {
-        path: "/projects/nft-scanner",
+        path: "/software/nft-scanner",
         title: "NFT Scanner",
         component: NFTScanner,
     },
     {
-        path: "/projects/extra",
+        path: "/software/extra",
         title: "Extra",
         component: ExtraProjects,
-    },
-    {
-        path: "/projects/repurposed-laptop",
-        title: "Repurposed Laptop",
-        component: RepurposedLaptop,
     },
 ] as const;
 
