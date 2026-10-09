@@ -3,15 +3,20 @@ import { SidebarProvider, SidebarTrigger } from "./components/ui/sidebar";
 import { HashRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
 import pages from "./pages";
 import Footer from "./components/Footer";
+import { useState } from "react";
 
 function Layout() {
+    const [sidebarTriggerPressed, setSidebarTriggerPressed] = useState(false);
     return (
         <SidebarProvider>
             <div>
                 <div className="flex fixed z-50">
                     <AppSidebar />
                     <div className="pt-2 pl-1 lg:pl-2">
-                        <SidebarTrigger className="lg:scale-150" />
+                        <SidebarTrigger
+                            className={`lg:scale-150 ${sidebarTriggerPressed ? "" : "animate-pulse"}`}
+                            onClick={() => setSidebarTriggerPressed(true)}
+                        />
                     </div>
                 </div>
                 <main>
