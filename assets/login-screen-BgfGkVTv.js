@@ -1,1 +1,0 @@
-const p=""+new URL("../images/projects/repurposed-laptop/pcb.jpg",import.meta.url).href,e=""+new URL("../images/projects/repurposed-laptop/login-screen.jpg",import.meta.url).href;export{p as a,e as l};
