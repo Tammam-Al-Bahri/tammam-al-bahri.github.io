@@ -8,7 +8,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, FileText /* Lock */ } from "lucide-react";
+import { ExternalLink, FileText } from "lucide-react";
 import { useState, useEffect } from "react";
 import NavButtons from "@/components/NavButtons";
 import ShinyText from "@/components/ShinyText";
@@ -28,7 +28,7 @@ export default function AutodeskAutocoderz() {
                     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[150px] bg-white/20 dark:bg-white/10 blur-3xl rounded-full" />
                     <ASCIIText
                         key={rerender ? "rerendered" : "initial"}
-                        text="Autodesk Autocoderz"
+                        text="Autocoderz"
                         enableWaves={false}
                         asciiFontSize={8}
                     />
@@ -109,35 +109,29 @@ export default function AutodeskAutocoderz() {
                                     </a>
                                 </p>
                                 <p className="pt-4">
-                                    Led a team of 5 through two sprints to develop a full stack
-                                    production ready prototype for a building management app.
+                                    Led a team of 5 (the <span className="italic">Autocoderz</span>)
+                                    through two sprints to develop a full stack prototype for a
+                                    building and staff management app.
                                 </p>
                                 <p className="pt-4">
-                                    Cross platform desktop app and website, both using the same API.
+                                    We built an API and a cross platform desktop app and website,
+                                    both sharing the API.
+                                </p>
+                                <p className="pt-4">
                                     The desktop app connects to the API, and the API also serves the
                                     web pages.
                                 </p>
                                 <p className="pt-4">
                                     Users can create companies and buildings, upload and view 3D
                                     models, invite users to a building as staff with specific roles,
-                                    reset their account password with email verification. Plenty of
-                                    room to add more features.
-                                </p>
-                                <p className="pt-4">Used Autodesk APIs including Viewer</p>
-                                <p className="pt-4">Scalable and developer friendly codebase.</p>
-                                <p className="pt-4">
-                                    It was previously hosted with{" "}
-                                    <a
-                                        href="https://railway.com/"
-                                        target="_blank"
-                                        className="text-muted-foreground font-semibold hover:underline"
-                                    >
-                                        Railway
-                                    </a>
-                                    .
+                                    reset their account password with email verification.
                                 </p>
                                 <p className="pt-4">
-                                    I will soon host this locally - server being built.
+                                    We used Autodesk APIs including the Viewer API
+                                </p>
+                                <p className="pt-4">Built with scalablity in mind.</p>
+                                <p className="pt-4 font-mono text-accent-foreground">
+                                    I am currently self hosting this on my homelab.
                                 </p>
                             </AccordionContent>
                         </AccordionItem>

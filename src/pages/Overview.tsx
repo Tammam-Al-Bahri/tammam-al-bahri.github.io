@@ -61,7 +61,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 export default function Overview() {
     const variants = ["default", "blue", "yellow", "pink"] as const;
-    const projects = [
+    const software = [
         {
             page: pages[2],
             variant: 1,
@@ -197,26 +197,29 @@ export default function Overview() {
                     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[150px] bg-white/20 dark:bg-white/10 blur-3xl rounded-full" />
                     <ASCIIText
                         key={rerender ? "rerendered" : "initial"}
-                        text="Projects"
+                        text="Overview"
                         enableWaves={false}
                         asciiFontSize={8}
                     />
                 </div>
+                <div className="text-center text-3xl font-mono mb-4 pb-2 border-b-2 border-dashed">
+                    Software Projects
+                </div>
                 <div className="flex flex-wrap justify-center gap-6 px-6">
-                    {projects.map((project) => {
+                    {software.map((item) => {
                         const [iconsVisible, setIconsVisible] = useState(false);
                         return (
                             <PixelCard
-                                key={project.page.path}
-                                variant={variants[project.variant]}
+                                key={item.page.path}
+                                variant={variants[item.variant]}
                                 className="bg-card border-border shadow-xl hover:scale-101"
                             >
                                 <div
                                     className={`absolute w-full h-full ${scaleClass} transition-transform duration-500 ease-in-out group`}
                                 >
-                                    <project.icon className="scale-150 m-4 z-10" />
+                                    <item.icon className="scale-150 m-4 z-10" />
                                     <div className="text-2xl text-center font-bold">
-                                        {project.page.title}
+                                        {item.page.title}
                                     </div>
                                     <div
                                         className={`absolute inset-0 md:opacity-0 ${
@@ -227,7 +230,7 @@ export default function Overview() {
                                         }}
                                     >
                                         <FallingIcons
-                                            icons={project.logos}
+                                            icons={item.logos}
                                             trigger="hover"
                                             gravity={0.8}
                                             iconSize={32}
@@ -241,14 +244,14 @@ export default function Overview() {
                                             sensitivity={180}
                                             sendToBackOnClick={true}
                                             cardDimensions={{ width: 200, height: 200 }}
-                                            cardsData={project.images}
+                                            cardsData={item.images}
                                         />
                                     </div>
                                     <div className="flex justify-end mx-[50px]">
                                         <Button
-                                            className="w-full z-10"
+                                            className="w-full z-10 hover:cursor-pointer"
                                             onClick={() => {
-                                                navigate(project.page.path);
+                                                navigate(item.page.path);
                                             }}
                                         >
                                             View
