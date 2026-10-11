@@ -10,10 +10,10 @@ import {
 import { Button } from "@/components/ui/button";
 import { FileText, Flag, ExternalLink } from "lucide-react";
 import { useState, useEffect } from "react";
-import nftScanner1 from "/images/projects/nft-scanner/lootboxes-with-weapon-data-json-screenshot.jpg";
-import nftScanner2 from "/images/projects/nft-scanner/console-get-all-mint-addresses-js.jpg";
-import nftScanner3 from "/images/projects/nft-scanner/console-scanner-js.jpg";
-import nftScanner4 from "/images/projects/nft-scanner/wallet-confirm-lootbox-open.jpg";
+import nftScanner1 from "/images/software/nft-scanner/lootboxes-with-weapon-data-json-screenshot.jpg";
+import nftScanner2 from "/images/software/nft-scanner/console-get-all-mint-addresses-js.jpg";
+import nftScanner3 from "/images/software/nft-scanner/console-scanner-js.jpg";
+import nftScanner4 from "/images/software/nft-scanner/wallet-confirm-lootbox-open.jpg";
 import ElectricBorder from "@/components/ElectricBorder";
 import NavButtons from "@/components/NavButtons";
 import ShinyText from "@/components/ShinyText";

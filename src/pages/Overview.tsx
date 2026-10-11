@@ -1,36 +1,47 @@
 import { Button } from "@/components/ui/button";
-import { BriefcaseBusiness, Paperclip, SearchCode, University, Users } from "lucide-react";
+import { BriefcaseBusiness, Paperclip, Router, SearchCode, University, Users } from "lucide-react";
 import pages from ".";
 import { useNavigate } from "react-router-dom";
 import ASCIIText from "@/components/ASCIIText";
 import { useState, useEffect } from "react";
 import PixelCard from "@/components/PixelCard";
 import Stack from "@/components/Stack";
-import nftScanner1 from "/images/projects/nft-scanner/lootboxes-with-weapon-data-json-screenshot.jpg";
-import nftScanner2 from "/images/projects/nft-scanner/console-get-all-mint-addresses-js.jpg";
-import nftScanner3 from "/images/projects/nft-scanner/console-scanner-js.jpg";
-import nftScanner4 from "/images/projects/nft-scanner/wallet-confirm-lootbox-open.jpg";
-import portfolio1 from "/images/projects/portfolio/projects.jpg";
-import portfolio2 from "/images/projects/portfolio/portfolio-recursion.jpg";
-import granada1 from "/images/projects/granada/app-and-docker.jpg";
-import granada2 from "/images/projects/granada/app-login.jpg";
-import granada3 from "/images/projects/granada/app-api-url.jpg";
-import uniTsk1 from "/images/projects/university-projects/tsk-collaborator-editing-subtask.jpg";
-import uniTsk2 from "/images/projects/university-projects/tsk-home.jpg";
-import uniTsk3 from "/images/projects/university-projects/tsk-managing-invites.jpg";
-import uniCc1 from "/images/projects/university-projects/cc-home.jpg";
-import uniCc2 from "/images/projects/university-projects/cc-find-contact.jpg";
-import uniCc3 from "/images/projects/university-projects/cc-courses.jpg";
-import uniCrm1 from "/images/projects/university-projects/crm-dashboard-search.jpg";
-import uniCrm2 from "/images/projects/university-projects/crm-dashboard-admin.jpg";
-import uniCrm3 from "/images/projects/university-projects/crm-login.jpg";
-import uniRecipeManager1 from "/images/projects/university-projects/recipe-manager-1.jpg";
-import uniRecipeManager2 from "/images/projects/university-projects/recipe-manager-2.jpg";
-import uniCrud1 from "/images/projects/university-projects/shuber-1.jpg";
-import uniCrud2 from "/images/projects/university-projects/shuber-2.jpg";
-import uniConsole1 from "/images/projects/university-projects/console-app-main.jpg";
-import uniConsole2 from "/images/projects/university-projects/console-app-tasks.jpg";
-import autocoderz1 from "/images/projects/autodesk-autocoderz/email-code.jpg";
+import nftScanner1 from "/images/software/nft-scanner/lootboxes-with-weapon-data-json-screenshot.jpg";
+import nftScanner2 from "/images/software/nft-scanner/console-get-all-mint-addresses-js.jpg";
+import nftScanner3 from "/images/software/nft-scanner/console-scanner-js.jpg";
+import nftScanner4 from "/images/software/nft-scanner/wallet-confirm-lootbox-open.jpg";
+import portfolio1 from "/images/software/portfolio/projects.jpg";
+import portfolio2 from "/images/software/portfolio/portfolio-recursion.jpg";
+import granada1 from "/images/software/granada/app-and-docker.jpg";
+import granada2 from "/images/software/granada/app-login.jpg";
+import granada3 from "/images/software/granada/app-api-url.jpg";
+import uniTsk1 from "/images/software/university-projects/tsk-collaborator-editing-subtask.jpg";
+import uniTsk2 from "/images/software/university-projects/tsk-home.jpg";
+import uniTsk3 from "/images/software/university-projects/tsk-managing-invites.jpg";
+import uniCc1 from "/images/software/university-projects/cc-home.jpg";
+import uniCc2 from "/images/software/university-projects/cc-find-contact.jpg";
+import uniCc3 from "/images/software/university-projects/cc-courses.jpg";
+import uniCrm1 from "/images/software/university-projects/crm-dashboard-search.jpg";
+import uniCrm2 from "/images/software/university-projects/crm-dashboard-admin.jpg";
+import uniCrm3 from "/images/software/university-projects/crm-login.jpg";
+import uniRecipeManager1 from "/images/software/university-projects/recipe-manager-1.jpg";
+import uniRecipeManager2 from "/images/software/university-projects/recipe-manager-2.jpg";
+import uniCrud1 from "/images/software/university-projects/shuber-1.jpg";
+import uniCrud2 from "/images/software/university-projects/shuber-2.jpg";
+import uniConsole1 from "/images/software/university-projects/console-app-main.jpg";
+import uniConsole2 from "/images/software/university-projects/console-app-tasks.jpg";
+import autocoderz1 from "/images/software/autodesk-autocoderz/email-code.jpg";
+import router1 from "/images/homelab/router/diy-case-progress.jpg";
+import router2 from "/images/homelab/router/m.2-a-e-key-2.5g-adapter.jpg";
+import router3 from "/images/homelab/router/opnsense-screenshot.jpg";
+import router4 from "/images/homelab/router/proxmox-setup.jpg";
+import router5 from "/images/homelab/router/router-and-switch.jpg";
+import router6 from "/images/homelab/router/setup.jpg";
+import router7 from "/images/homelab/router/setup-cool.jpg";
+import router8 from "/images/homelab/router/soldered-power-button.jpg";
+import router9 from "/images/homelab/router/wan-lan.jpg";
+import router10 from "/images/homelab/router/wifi-ap.jpg";
+import router11 from "/images/homelab/router/proxmox-screenshot.jpg";
 import {
     SiDotnet,
     SiJavascript,
@@ -58,10 +69,18 @@ import {
 import FallingIcons from "@/components/FallingIcons";
 import NavButtons from "@/components/NavButtons";
 import { useIsMobile } from "@/hooks/use-mobile";
+import type { IconType } from "react-icons/lib";
 
 export default function Overview() {
     const variants = ["default", "blue", "yellow", "pink"] as const;
-    const software = [
+    type ProjectCard = {
+        page: any;
+        variant: number;
+        icon: any;
+        images: { id: number; img: string }[];
+        logos: IconType[];
+    };
+    const software: ProjectCard[] = [
         {
             page: pages[2],
             variant: 1,
@@ -172,6 +191,39 @@ export default function Overview() {
         },
     ];
 
+    const homelab: ProjectCard[] = [
+        {
+            page: pages[7],
+            variant: 2,
+            icon: Router,
+            images: [
+                { id: 10, img: router10 },
+                { id: 6, img: router6 },
+                { id: 9, img: router9 },
+                { id: 2, img: router2 },
+                { id: 1, img: router1 },
+                { id: 8, img: router8 },
+                { id: 3, img: router3 },
+                { id: 11, img: router11 },
+                { id: 4, img: router4 },
+                { id: 7, img: router7 },
+                { id: 5, img: router5 },
+            ],
+            logos: [
+                SiDotnet,
+                SiJavascript,
+                SiTypescript,
+                SiNextdotjs,
+                SiReact,
+                SiCss3,
+                SiTailwindcss,
+                SiSqlite,
+                SiMysql,
+                SiClerk,
+            ],
+        },
+    ];
+
     const navigate = useNavigate();
     const [rerender, setRerender] = useState(false);
 
@@ -205,8 +257,69 @@ export default function Overview() {
                 <div className="text-center text-3xl font-mono mb-4 pb-2 border-b-2 border-dashed">
                     Software Projects
                 </div>
-                <div className="flex flex-wrap justify-center gap-6 px-6">
+                <div className="flex flex-wrap justify-center gap-6 px-6 mb-8">
                     {software.map((item) => {
+                        const [iconsVisible, setIconsVisible] = useState(false);
+                        return (
+                            <PixelCard
+                                key={item.page.path}
+                                variant={variants[item.variant]}
+                                className="bg-card border-border shadow-xl hover:scale-101"
+                            >
+                                <div
+                                    className={`absolute w-full h-full ${scaleClass} transition-transform duration-500 ease-in-out group`}
+                                >
+                                    <item.icon className="scale-150 m-4 z-10" />
+                                    <div className="text-2xl text-center font-bold">
+                                        {item.page.title}
+                                    </div>
+                                    <div
+                                        className={`absolute inset-0 md:opacity-0 ${
+                                            iconsVisible ? "md:opacity-100" : "opacity-0"
+                                        } group-hover:opacity-100 transition-opacity duration-200`}
+                                        onClick={() => {
+                                            if (isMobile) setIconsVisible(true);
+                                        }}
+                                    >
+                                        <FallingIcons
+                                            icons={item.logos}
+                                            trigger="hover"
+                                            gravity={0.8}
+                                            iconSize={32}
+                                            wireframes={false}
+                                            mouseConstraintStiffness={0.9}
+                                        />
+                                    </div>
+                                    <div className="flex justify-center my-4 z-10 hover:scale-105">
+                                        <Stack
+                                            randomRotation={true}
+                                            sensitivity={180}
+                                            sendToBackOnClick={true}
+                                            cardDimensions={{ width: 200, height: 200 }}
+                                            cardsData={item.images}
+                                        />
+                                    </div>
+                                    <div className="flex justify-end mx-[50px]">
+                                        <Button
+                                            className="w-full z-10 hover:cursor-pointer"
+                                            onClick={() => {
+                                                navigate(item.page.path);
+                                            }}
+                                        >
+                                            View
+                                        </Button>
+                                    </div>
+                                </div>
+                            </PixelCard>
+                        );
+                    })}
+                    <div className="grow basis-[300px] max-w-[300px]" />
+                </div>
+                <div className="text-center text-3xl font-mono mb-4 pb-2 border-b-2 border-dashed">
+                    Homelab
+                </div>
+                <div className="flex flex-wrap justify-center gap-6 px-6 mb-8">
+                    {homelab.map((item) => {
                         const [iconsVisible, setIconsVisible] = useState(false);
                         return (
                             <PixelCard

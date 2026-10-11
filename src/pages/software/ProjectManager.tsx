@@ -11,9 +11,9 @@ import {
 import { Button } from "@/components/ui/button";
 import { ExternalLink, FileText, Flag } from "lucide-react";
 import { useState, useEffect } from "react";
-import granada1 from "/images/projects/granada/app-and-docker.jpg";
-import granada2 from "/images/projects/granada/app-login.jpg";
-import granada3 from "/images/projects/granada/app-api-url.jpg";
+import granada1 from "/images/software/granada/app-and-docker.jpg";
+import granada2 from "/images/software/granada/app-login.jpg";
+import granada3 from "/images/software/granada/app-api-url.jpg";
 import NavButtons from "@/components/NavButtons";
 
 export default function ProjectManager() {

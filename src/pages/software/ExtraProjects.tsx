@@ -1,21 +1,21 @@
 import ASCIIText from "@/components/ASCIIText";
 import Stack from "@/components/Stack";
 import { useState, useEffect } from "react";
-import uniTsk1 from "/images/projects/university-projects/tsk-collaborator-editing-subtask.jpg";
-import uniTsk2 from "/images/projects/university-projects/tsk-home.jpg";
-import uniTsk3 from "/images/projects/university-projects/tsk-managing-invites.jpg";
-import uniCc1 from "/images/projects/university-projects/cc-home.jpg";
-import uniCc2 from "/images/projects/university-projects/cc-find-contact.jpg";
-import uniCc3 from "/images/projects/university-projects/cc-courses.jpg";
-import uniCrm1 from "/images/projects/university-projects/crm-dashboard-search.jpg";
-import uniCrm2 from "/images/projects/university-projects/crm-dashboard-admin.jpg";
-import uniCrm3 from "/images/projects/university-projects/crm-login.jpg";
-import uniRecipeManager1 from "/images/projects/university-projects/recipe-manager-1.jpg";
-import uniRecipeManager2 from "/images/projects/university-projects/recipe-manager-2.jpg";
-import uniCrud1 from "/images/projects/university-projects/shuber-1.jpg";
-import uniCrud2 from "/images/projects/university-projects/shuber-2.jpg";
-import uniConsole1 from "/images/projects/university-projects/console-app-main.jpg";
-import uniConsole2 from "/images/projects/university-projects/console-app-tasks.jpg";
+import uniTsk1 from "/images/software/university-projects/tsk-collaborator-editing-subtask.jpg";
+import uniTsk2 from "/images/software/university-projects/tsk-home.jpg";
+import uniTsk3 from "/images/software/university-projects/tsk-managing-invites.jpg";
+import uniCc1 from "/images/software/university-projects/cc-home.jpg";
+import uniCc2 from "/images/software/university-projects/cc-find-contact.jpg";
+import uniCc3 from "/images/software/university-projects/cc-courses.jpg";
+import uniCrm1 from "/images/software/university-projects/crm-dashboard-search.jpg";
+import uniCrm2 from "/images/software/university-projects/crm-dashboard-admin.jpg";
+import uniCrm3 from "/images/software/university-projects/crm-login.jpg";
+import uniRecipeManager1 from "/images/software/university-projects/recipe-manager-1.jpg";
+import uniRecipeManager2 from "/images/software/university-projects/recipe-manager-2.jpg";
+import uniCrud1 from "/images/software/university-projects/shuber-1.jpg";
+import uniCrud2 from "/images/software/university-projects/shuber-2.jpg";
+import uniConsole1 from "/images/software/university-projects/console-app-main.jpg";
+import uniConsole2 from "/images/software/university-projects/console-app-tasks.jpg";
 import NavButtons from "@/components/NavButtons";
 
 export default function ExtraProjects() {

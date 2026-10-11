@@ -4,6 +4,7 @@ import {
     Folders,
     Paperclip,
     PersonStanding,
+    Router,
     SearchCode,
     Users,
     type LucideProps,
@@ -81,9 +82,9 @@ const softwareItems: MenuItem[] = [
 
 const homelabItems: MenuItem[] = [
     {
-        title: "Me",
-        path: "/",
-        icon: PersonStanding,
+        title: "Router",
+        path: "/homelab/router",
+        icon: Router,
     },
 ];
 
