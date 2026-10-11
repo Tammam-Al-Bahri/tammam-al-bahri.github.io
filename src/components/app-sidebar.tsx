@@ -6,6 +6,7 @@ import {
     PersonStanding,
     Router,
     SearchCode,
+    Server,
     Users,
     type LucideProps,
 } from "lucide-react";
@@ -85,6 +86,11 @@ const homelabItems: MenuItem[] = [
         title: "Router",
         path: "/homelab/router",
         icon: Router,
+    },
+    {
+        title: "Server0",
+        path: "/homelab/server0",
+        icon: Server,
     },
 ];
 

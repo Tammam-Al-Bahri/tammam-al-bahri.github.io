@@ -9,6 +9,7 @@ const ExtraProjects = lazy(() => import("./software/ExtraProjects"));
 const NFTScanner = lazy(() => import("./software/NFTScanner"));
 const AutodeskAutocoderz = lazy(() => import("./software/AutodeskAutocoderz"));
 const Router = lazy(() => import("./homelab/Router"));
+const Server0 = lazy(() => import("./homelab/Server0"));
 
 const pages = [
     {
@@ -50,6 +51,11 @@ const pages = [
         path: "/homelab/router",
         title: "Router",
         component: Router,
+    },
+    {
+        path: "/homelab/server0",
+        title: "Server0",
+        component: Server0,
     },
 ] as const;
 

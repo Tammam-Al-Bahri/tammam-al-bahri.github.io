@@ -131,7 +131,7 @@ export default function AutodeskAutocoderz() {
                                 </p>
                                 <p className="pt-4">Built with scalablity in mind.</p>
                                 <p className="pt-4 font-mono text-accent-foreground">
-                                    I am currently self hosting this on my homelab.
+                                    I am currently self-hosting this on my homelab.
                                 </p>
                             </AccordionContent>
                         </AccordionItem>
