@@ -65,6 +65,9 @@ import {
     SiRailway,
     SiCloudflare,
     SiResend,
+    SiProxmox,
+    SiOpnsense,
+    SiWireguard,
 } from "react-icons/si";
 import FallingIcons from "@/components/FallingIcons";
 import NavButtons from "@/components/NavButtons";
@@ -209,18 +212,7 @@ export default function Overview() {
                 { id: 7, img: router7 },
                 { id: 5, img: router5 },
             ],
-            logos: [
-                SiDotnet,
-                SiJavascript,
-                SiTypescript,
-                SiNextdotjs,
-                SiReact,
-                SiCss3,
-                SiTailwindcss,
-                SiSqlite,
-                SiMysql,
-                SiClerk,
-            ],
+            logos: [SiProxmox, SiOpnsense, SiWireguard],
         },
     ];
 
