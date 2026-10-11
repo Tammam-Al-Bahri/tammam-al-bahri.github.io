@@ -1,0 +1,1 @@
+const a=""+new URL("../images/software/granada/app-and-docker.jpg",import.meta.url).href,r=""+new URL("../images/software/granada/app-login.jpg",import.meta.url).href,e=""+new URL("../images/software/granada/app-api-url.jpg",import.meta.url).href;export{r as a,a as b,e as g};
