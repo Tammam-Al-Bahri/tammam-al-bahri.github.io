@@ -57,7 +57,7 @@ const softwareItems: MenuItem[] = [
         title: "Autocoderz",
         path: "/software/autocoderz",
         icon: Users,
-        extraText: "Self Hosted!",
+        extraText: "self-hosted!",
     },
     {
         title: "Portfolio",

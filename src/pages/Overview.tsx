@@ -42,6 +42,12 @@ import router8 from "/images/homelab/router/soldered-power-button.jpg";
 import router9 from "/images/homelab/router/wan-lan.jpg";
 import router10 from "/images/homelab/router/wifi-ap.jpg";
 import router11 from "/images/homelab/router/proxmox-screenshot.jpg";
+import server01 from "/images/homelab/server0/build-in-progress.jpg";
+import server02 from "/images/homelab/server0/dokploy.jpg";
+import server03 from "/images/homelab/server0/proxmox-screenshot.jpg";
+import server04 from "/images/homelab/server0/top-open.jpg";
+import server05 from "/images/homelab/server0/truenas.jpg";
+import server06 from "/images/homelab/server0/adguard.jpg";
 import {
     SiDotnet,
     SiJavascript,
@@ -68,6 +74,10 @@ import {
     SiProxmox,
     SiOpnsense,
     SiWireguard,
+    SiUbuntu,
+    SiTruenas,
+    SiAdguard,
+    SiTraefikproxy,
 } from "react-icons/si";
 import FallingIcons from "@/components/FallingIcons";
 import NavButtons from "@/components/NavButtons";
@@ -213,6 +223,28 @@ export default function Overview() {
                 { id: 5, img: router5 },
             ],
             logos: [SiProxmox, SiOpnsense, SiWireguard],
+        },
+        {
+            page: pages[8],
+            variant: 3,
+            icon: Router,
+            images: [
+                { id: 6, img: server06 },
+                { id: 5, img: server05 },
+                { id: 2, img: server02 },
+                { id: 3, img: server03 },
+                { id: 1, img: server01 },
+                { id: 4, img: server04 },
+            ],
+            logos: [
+                SiProxmox,
+                SiUbuntu,
+                SiTruenas,
+                SiCloudflare,
+                SiAdguard,
+                SiTraefikproxy,
+                SiDocker,
+            ],
         },
     ];
 

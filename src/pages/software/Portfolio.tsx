@@ -52,7 +52,7 @@ export default function Portfolio() {
                     />
                     <div className="relative flex justify-center group select-none mb-4">
                         <div className="text-center text-sm text-muted-foreground font-mono">
-                            Inception Level: {level}
+                            Recursion Level: {level}
                         </div>
                         <div className="absolute top-full z-10 text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
                             navigate to this page on the phone
@@ -64,7 +64,7 @@ export default function Portfolio() {
 
                             <iframe
                                 src={`/?level=${nextLevel}`}
-                                title="Portfolio Inception"
+                                title="Portfolio"
                                 className="w-full h-full rounded-[2.5rem] overflow-hidden"
                             ></iframe>
                         </div>

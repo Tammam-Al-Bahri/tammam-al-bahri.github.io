@@ -74,7 +74,6 @@ export default function Server0() {
                                         className="italic hover:underline"
                                     >
                                         deploy.tammam.uk
-                                        {/* <ExternalLink size={40} /> */}
                                     </a>
                                     , where I can easily deploy public-facing apps with CI/CD.
                                 </p>
